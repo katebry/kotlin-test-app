@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.first_app.databinding.FragmentFirstBinding
@@ -16,6 +17,18 @@ import com.example.first_app.databinding.FragmentFirstBinding
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
+
+    private fun countMe(view: View) {
+        // Get the text view
+        val showCountTextView = view.findViewById<TextView>(R.id.textview_first)
+        // Get the value of the text view.
+        val countString = showCountTextView.text.toString()
+        // Convert value to a number and increment it
+        var count = countString.toInt()
+        count++
+        // Display the new value in the text view.
+        showCountTextView.text = count.toString()
+    }
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -43,6 +56,10 @@ class FirstFragment : Fragment() {
             val myToast = Toast.makeText(context, "Hello Toast!", Toast.LENGTH_SHORT)
             // show the Toast
             myToast.show()
+        }
+
+        view.findViewById<Button>(R.id.count_button).setOnClickListener {
+            countMe(view)
         }
     }
 
