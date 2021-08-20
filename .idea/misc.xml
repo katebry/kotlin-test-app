@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/44794/Documents/GitHub/kotlin-test-app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.375" />
         <entry key="..\:/Users/44794/Documents/GitHub/kotlin-test-app/app/src/main/res/layout/activity_main.xml" value="0.19630192502532928" />
+        <entry key="..\:/Users/44794/Documents/GitHub/kotlin-test-app/app/src/main/res/layout/content_main.xml" value="0.4041666666666667" />
         <entry key="..\:/Users/44794/Documents/GitHub/kotlin-test-app/app/src/main/res/layout/fragment_first.xml" value="0.264" />
+        <entry key="..\:/Users/44794/Documents/GitHub/kotlin-test-app/app/src/main/res/layout/fragment_second.xml" value="0.4041666666666667" />
       </map>
     </option>
   </component>
